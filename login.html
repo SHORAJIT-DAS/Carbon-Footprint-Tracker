@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – CarboScope</title>
+  
+  
+
+
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/otp.css">
+</head>
+
+<body>
+
+<div class="auth-wrapper">
+
+  <div class="auth-card">
+
+    <h1>Welcome to CarboScope</h1>
+    <p class="auth-subtitle">
+      Log in securely using your email. We’ll send you a one-time password.
+    </p>
+
+    <!-- EMAIL STEP -->
+    <div class="auth-step active" id="emailStep">
+      <label>Email address</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="yourname@gmail.com"
+        required
+      />
+
+      <button class="btn-primary" onclick="sendOTP()">
+        Send OTP
+      </button>
+    </div>
+
+    <!-- OTP STEP -->
+    <div class="auth-step" id="otpStep">
+      <label>Enter OTP</label>
+      <input
+        type="text"
+        id="otp"
+        placeholder="6-digit code"
+        maxlength="6"
+      />
+
+      <button class="btn-primary" onclick="verifyOTP()">
+        Verify & Login
+      </button>
+
+      <button class="btn-link" onclick="resendOTP()">
+        Resend OTP
+      </button>
+    </div>
+
+    <p class="auth-note">
+      We never share your email. OTPs expire in 5 minutes.
+    </p>
+
+  </div>
+
+</div>
+<input type="email" id="email" />
+<input type="text" id="otp" />
+
+<div id="emailStep" class="auth-step active"></div>
+<div id="otpStep" class="auth-step"></div>
+<button onclick="sendOTP()">Send OTP</button>
+<button onclick="verifyOTP()">Verify & Login</button>
+<button onclick="resendOTP()">Resend OTP</button>
+
+
+
+<script src="./js/auth.js"></script>
+</body>
+</html>

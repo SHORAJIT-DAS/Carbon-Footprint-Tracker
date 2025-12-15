@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Calculator – CarboScope</title>
+
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">CarboScope</div>
+  </div>
+</header>
+
+<section class="calculator">
+
+  <!-- ====== HEADER ====== -->
+  <div class="calc-header">
+    <h1>Calculate Your Impact</h1>
+    <p>
+      Adjust the sliders below to estimate your annual carbon footprint
+      based on real lifestyle choices.
+    </p>
+  </div>
+
+  <!-- ====== RESULT CARD ====== -->
+  <div class="result-card">
+    <p>Your Estimated Annual Carbon Footprint</p>
+    <h2>
+      <span id="totalCO2">0.0</span>
+      <small>tons CO₂</small>
+    </h2>
+    <span id="impactLabel" class="impact high">High Emissions</span>
+  </div>
+
+  <!-- ====== SLIDERS ====== -->
+  <div class="slider-group">
+
+    <!-- COMMUTE -->
+    <div class="slider-row">
+      <div class="slider-label">
+        🚗 Daily Commute
+        <span><span id="commuteVal">20</span> km/day</span>
+      </div>
+      <input type="range" min="0" max="100" value="20" id="commute">
+    </div>
+
+    <!-- ELECTRICITY -->
+    <div class="slider-row">
+      <div class="slider-label">
+        ⚡ Electricity
+        <span><span id="electricityVal">300</span> kWh/month</span>
+      </div>
+      <input type="range" min="50" max="1000" value="300" id="electricity">
+    </div>
+
+    <!-- FLIGHTS -->
+    <div class="slider-row">
+      <div class="slider-label">
+        ✈️ Flights
+        <span><span id="flightVal">10</span> hrs/year</span>
+      </div>
+      <input type="range" min="0" max="200" value="10" id="flights">
+    </div>
+
+    <!-- MEAT -->
+    <div class="slider-row">
+      <div class="slider-label">
+        🍽️ Meat Consumption
+        <span><span id="meatVal">9</span> meals/week</span>
+      </div>
+      <input type="range" min="0" max="21" value="9" id="meat">
+    </div>
+
+    <!-- SHOPPING -->
+    <div class="slider-row">
+      <div class="slider-label">
+        🛍️ Shopping
+        <span><span id="shoppingVal">10</span> items/month</span>
+      </div>
+      <input type="range" min="0" max="50" value="10" id="shopping">
+    </div>
+
+  </div>
+
+</section>
+
+
+<script src="./js/ui.js"></script>
+<script src="./js/calculator.js"></script>
+
+<!-- ====== LOCATION ====== -->
+<div class="location-card">
+
+  <h3>Your Location</h3>
+
+  <div class="location-grid">
+
+    <label>
+      Country
+      <select id="country">
+        <option value="">Select country</option>
+      </select>
+    </label>
+
+  </div>
+
+  <p class="location-note">
+    Electricity emissions are calculated using national grid averages.
+  </p>
+
+</div>
+
+</body>
+</html>
