@@ -1,0 +1,218 @@
+.hero {
+  padding: var(--space-xl) var(--space-md);
+  max-width: 800px;
+  margin: auto;
+}
+
+.trust {
+  background: #ffffff;
+  padding: var(--space-lg);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.how {
+  padding: var(--space-xl) var(--space-md);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: var(--space-lg);
+}
+
+.calculator {
+  max-width: 600px;
+  margin: auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.calc-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+.trust-marquee {
+  background: #f0faf4;
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 48px;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee-track span {
+  font-weight: 500;
+  color: var(--green-900);
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.hero {
+  background: linear-gradient(
+    to bottom,
+    #f4fbf7,
+    #ffffff
+  );
+}
+.hero {
+  position: relative;
+  padding: 80px 0;          /* controls hero size */
+  background-image:
+    linear-gradient(
+      rgba(244, 251, 247, 0.9),
+      rgba(244, 251, 247, 0.9)
+    ),
+    url("./assets/co2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-content {
+  max-width: 650px;
+  margin-left: 80px; /* adjust */
+}
+.hero {
+  backdrop-filter: blur(2px);
+}
+.hero {
+  /* Replace with your actual image URL */
+  background-image: url("co2.jpeg"); 
+  
+  /* Ensure image covers the whole area without repeating */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Optional: Set height and padding for better visibility */
+  height: 400px;
+  width:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /* Contrast text against the background */
+}
+.hero {
+  padding: 60px 0;
+  background: #f4fbf7;
+}
+
+/* IMAGE BLOCK */
+.hero-image {
+  position: relative;
+  max-width: 900px;
+  height: 420px;
+  width:50%;
+  margin: 0 auto 48px auto;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("./assets/co2.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* TEXT OVER IMAGE */
+.hero-overlay-text {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+
+/* CO₂ STYLE */
+.co2-label {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.co2-subtext {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* HERO TEXT BELOW IMAGE */
+.hero-content {
+  max-width: 720px;
+  margin: auto;
+  text-align: left;
+}
+.trust-marquee{
+    background-color: white;
+}
+.footer{
+    background-color: green;
+    color: white;
+}
+.hero {
+  padding: 100px 0;
+  background:
+    radial-gradient(
+      circle at center,
+      #2fa36b 0%,
+      #1b7a4a 35%,
+      #145a3a 65%,
+      #0f3d2e 100%
+    );
+  color: var(--text-white);
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-white);
+}
+
+.hero h1 span {
+  color: var(--green-600);
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 680px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+.pclass{
+    color:black;
+    
+}
+

@@ -1,0 +1,19 @@
+:root {
+  /* PRIMARY GREENS */
+  --green-900: #0f3d2e;
+  --green-800: #145a3a;
+  --green-700: #1b7a4a;
+  --green-600: #2fa36b;
+
+  /* LIGHT GREENS */
+  --green-100: #eaf7f0;
+  --green-50: #f4fbf7;
+
+  /* TEXT */
+  --text-white: #ffffff;
+  --text-light: #d8efe3;
+  --text-dark: #1f2933;
+
+  /* BUTTON */
+  --btn-green: #1b7a4a;
+}
